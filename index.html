@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <h1>Recipe Finder</h1>
+      </header>
+      <form id="search-form" class="search-form">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for a recipe..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+      <button id="openAddRecipeModal" class="btn">Add Recipe</button>
+      <div id="results" class="results-container"></div>
+      <h2>Your Bookmarked Recipes</h2>
+      <div id="bookmarked-recipes" class="results-container"></div>
+      <div id="recipeModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="recipe-details"></div>
+        </div>
+      </div>
+      <div id="addRecipeModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Add Your Recipe</h2>
+          <form id="add-recipe-form" class="add-recipe-form">
+            <input
+              type="text"
+              id="recipe-title"
+              placeholder="Recipe Title"
+              required
+            />
+            <input
+              type="text"
+              id="recipe-image"
+              placeholder="Image URL"
+              required
+            />
+            <textarea
+              id="recipe-description"
+              placeholder="Description"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">Add Recipe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2024 Ubaid's Recipe Finder</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
